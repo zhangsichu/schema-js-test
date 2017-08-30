@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "properties": {
+    "city": {
+      "additionalProperties": false,
+      "id": "/properties/city",
+      "properties": {
+        "coord": {
+          "additionalProperties": false,
+          "id": "/properties/city/properties/coord",
+          "properties": {
+            "lat": {
+              "id": "/properties/city/properties/coord/properties/lat",
+              "type": "number"
+            },
+            "lon": {
+              "id": "/properties/city/properties/coord/properties/lon",
+              "type": "number"
+            }
+          },
+          "type": "object"
+        },
+        "country": {
+          "id": "/properties/city/properties/country",
+          "type": "string"
+        },
+        "id": {
+          "id": "/properties/city/properties/id",
+          "type": "integer"
+        },
+        "name": {
+          "id": "/properties/city/properties/name",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "cnt": {
+      "id": "/properties/cnt",
+      "type": "integer"
+    },
+    "cod": {
+      "id": "/properties/cod",
+      "type": "string"
+    },
+    "list": {
+      "additionalItems": false,
+      "id": "/properties/list",
+      "items": {
+        "description": "This accepts anything, as long as it's valid JSON.",
+        "id": "/properties/list/items",
+        "title": "Empty Object"
+      },
+      "type": "array"
+    },
+    "message": {
+      "id": "/properties/message",
+      "type": "number"
+    }
+  },
+  "type": "object"
+}

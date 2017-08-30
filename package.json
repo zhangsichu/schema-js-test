@@ -1,0 +1,36 @@
+{
+  "name": "schema-js-test",
+  "version": "1.0.0",
+  "description": "js scheam test",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests/**/*.js",
+    "coverage": "istanbul cover _mocha ./tests/**/*.js ",
+    "eslint": "eslint .",
+    "fix-eslint": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangsichu/schema-js-test.git"
+  },
+  "author": "zhangsichu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangsichu/schema-js-test/issues"
+  },
+  "homepage": "https://github.com/zhangsichu/schema-js-test#readme",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "chai-ajv-json-schema": "^1.0.0",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb-base": "^11.3.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.0"
+  },
+  "dependencies": {
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}
